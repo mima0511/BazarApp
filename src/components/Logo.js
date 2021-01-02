@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 import { Image, StyleSheet,View } from 'react-native';
 
-const Logo = () => (
+const Logo = ({ children })  => (
   <View style={styles.container}>
     <Image source={require('../assets/LOG.jpg')} style={styles.image} />
   </View>);
@@ -11,8 +11,8 @@ const styles = StyleSheet.create({
     paddingTop: 0,
   },
   image: {
-    width: 350,
-    height: 350,
+    width: 200,
+    height: 200,
     marginBottom: 10,
   },
 });
